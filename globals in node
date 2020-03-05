@@ -1,0 +1,11 @@
+Node uses commonJS
+
+HelpFul globals in nodejs but just like browsers dont create them.
+
+1. process: has info about the environment the program is running in 
+2. require: function to find and use modules in current module 
+3. __dirname: the current directory path 
+4. module: information  about current module, methods for making modules consumable 
+5. global: like window, its the global object. NEVER Use them 
+
+and there are more like __filename

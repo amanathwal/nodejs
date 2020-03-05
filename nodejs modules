@@ -1,0 +1,32 @@
+Module:
+ encapsulated code, you can ask for it and what you get back is only what it lets 
+ you to have. It doesnot cause side effects.
+
+Here how it is under the hood: 
+var module1 = (function( exports, require, module, __filename, __dirname) {
+    // your nodejs code in a file
+});
+
+
+==== Common JS ====
+
+==== Creating Modules ====
+All your nodejs code is already module 
+
+exmample:
+   const add = () => {}
+   module.exports = add; // default export
+   module.exports = {    //named exports 
+       add, thing(),
+       value: 1
+   } 
+
+   import : 
+   const data = require('');
+
+   there is only one module.exports statement if you write another one 
+   you can overwrite the previous export.
+   but you can append a new property usingh 
+   module.exports.newProperty 
+
+   =======
